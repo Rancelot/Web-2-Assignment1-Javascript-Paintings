@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"/>  
+    <title>COMP 3512 Assign1</title>   
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800" rel="stylesheet">    
+    <link rel="stylesheet" href="css/assign1.css">
+    
+</head>
+<body>
+
+<main class="container">
+  <div class="box h">
+      <header>
+          <h1>COMP 3512 Assign1</h1>
+          <p>Rafael Angelo Pucut</p>
+      </header>
+  </div>
+  <div class="box a"><!--A-->
+      <section>
+          <label> </label>
+          <h2 id="galleryName"></h2>
+          <label>Native Name:</label>
+          <span id="galleryNative"></span>          
+          <label>City:</label>
+          <span id="galleryCity"></span>       
+          <label>Address:</label>
+          <span id="galleryAddress"></span>   
+          <label>Country:</label>
+          <span id="galleryCountry"></span>            
+          <label>Home:</label>
+          <span><a href="" id="galleryHome"></a></span>            
+      </section>  
+  </div>
+  <div class="box b">
+    <!--B  -->
+      <section>
+        <h2 id="galleryH2">Galleries</h2>
+        <ul id="galleryList"></ul>        
+      </section>  	
+  </div>
+  <div class="box d"><!--D-->
+      <div class="map"></div>
+  </div>
+  <div class="box c"><!--C-->
+    <section id="paintingList">
+      <h2 id="captionT">Famous Paintings</h2>
+      <ul id="headRow">
+        <li></li>
+        <li id="artist">Artist</li>
+        <li id="title">Title</li>
+        <li id="year">Year</li>
+      </ul>
+    </section>
+    
+  </div>
+  
+  <div class="box single">
+    <section>
+      <div id="singleImage">
+        <img id="singlePaint"/>
+      </div>
+      <div>
+        <section id="headerSection">
+          <h1 id="singleTitle"></h1>
+          <button id="titleSpeakButton" class="button">Speak</button>
+        </section>
+        
+        <h4 id="singleArtist"></h4>
+        <h5 id="singleYMSC"></h5>
+        <h5 id="singleLinkTitle"><u>Links: </u></h5>
+        <ul id="singlePaintLinks"></ul>
+        
+        <section id="descriptionSection">
+          <p id="singleDesc"></p>
+          <button id="descSpeakButton" class="button">Speak</button>
+        </section>
+        
+        <button id="closeButton" class="button">Close</button>
+      </div>
+    </section>
+  </div>
+</main>
+
+    
+<script src="js/jsAssign1.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe3BWuw98pczFjghb0bi4pLHkNZMNRKcw&callback=initMap"
+    async defer></script>
+</body>
+</html>

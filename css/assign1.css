@@ -1,0 +1,204 @@
+/*Default Styles*/
+body {
+    margin: 40px;
+    /*background-color: #e9e9e9;*/
+    background-color: #eaa014;
+    font-family: Open Sans, sans-serif;
+    font-size: 0.8rem;
+}
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 20rem 33rem auto;
+  color: #444;
+}
+
+.box {
+  /*background-color: #cdcdcd;*/
+  background-color: #ea7514;
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+/*Header*/
+.h {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+/*All Galleries*/
+.b {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+}
+
+/*Gallery Infomation*/
+.a {
+  grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+/*Map*/
+.d {
+  grid-column: 2 / span 1;
+  grid-row: 3;
+  position: relative;
+}
+
+/*.map styling below and position: relative on the .d css styling is credited*/
+/*to this link below*/
+/*https://stackoverflow.com/questions/10209704/set-google-maps-container-div-width-and-height-100/10210153*/
+.map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/*Famous Paintings Information*/
+.c {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 2;
+}
+
+/*Single Page View*/
+.single {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    display: none;
+}
+
+/*Style of ul and li elements*/
+ul#galleryList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul#galleryList li {
+    margin-bottom: 0.25rem;
+    cursor: pointer;
+}
+ul#paintingList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul#paintingList li {
+    margin-bottom: 0.25rem;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Div styles for each box*/
+div.a section {
+    display: none;		/* programmatically change this to "grid" when gallery clicked */
+    grid-gap: 4px;
+    grid-template-columns: 5rem auto;	
+}
+div.b section {
+    display: block;	  /* go ahead and change this to "block" when you have received data */
+}
+div.c section {
+    display: none;    /* programmatically change this to "block" when gallery clicked */
+    grid-template-columns: 2rem 2rem 2rem 2rem;
+}
+
+div.single section {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 50% 50%;
+}
+
+/*Applies borders on the div elements with content*/
+div.a, div.b, div.c, div.h, div.single {
+  border: 1px solid black;
+}
+
+
+/*Styles for the Painting Gallery List*/
+.c section ul {
+    display: grid;
+    grip-gap: 5px;
+    grid-template-columns: 15% 20% 50% 15%;
+    text-align: center;
+    align-items: center;
+}
+
+.row {
+  border-top: 1px solid black;
+}
+
+.image {
+   margin-top: 10px;
+   padding: 1px;
+   border: 1px solid black;
+}
+
+#artist, #title, #year {
+    font-weight: bold;
+}
+
+#captionT, #galleryH2 {
+   /*background-color: #BDBDBD;*/
+   background-color: #ea4b14;
+   font-weight: bold;
+   font-size: 20px;
+   padding: 12px;
+   text-align: center;
+}
+
+/*Styles for the Single Painting View*/
+.single section {
+    display: none;
+    justify-content: space-evenly;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+    /*text-align: center;*/
+    align-items: center;
+}
+
+#headerSection, #descriptionSection {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 85% 15%;
+}
+
+#singleImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#singlePaint {
+    width: 100%;
+    max-width: 600px;
+}
+
+#singleLinkTitle {
+    margin: 0;
+}
+
+.button {
+    background-color: #e81919;
+    border-color: #e81919;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    border: 2px solid #e81919;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: #d10202;
+    border-color: #ff0202;
+}
