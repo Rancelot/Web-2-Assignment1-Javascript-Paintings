@@ -125,7 +125,7 @@ function galleryMapDetails(e, galleries) {
             address.textContent = info.GalleryAddress;
             country.textContent = info.GalleryCountry;
             home.textContent = info.GalleryWebSite;
-            initMap(info.Latitude, info.Longitude);
+            //initMap(info.Latitude, info.Longitude);
             fetch("https://www.randyconnolly.com/funwebdev/services/art/paintings.php?gallery=" + info.GalleryID)
                 .then( response => response.json() )
                 .then( data => {
@@ -405,13 +405,13 @@ function classClearer(elementsByClass) {
  * @param latitude - the latitude value of the selected gallery's location
  * @param longitude - the longitude value of the selected gallery's location
  */ 
-function initMap(latitude, longitude) {
-    let divMap = document.querySelector(".map");
-    let divMapContainer = document.querySelector(".d");
-    divMapContainer.style.display = "block";
-    map = new google.maps.Map(document.querySelector(".d"), {
-                    center: {lat: parseFloat(latitude), lng: parseFloat(longitude)},
-                    mapTypeId: 'satellite',
-                    zoom: 18
-            });
-}
+// function initMap(latitude, longitude) {
+//     let divMap = document.querySelector(".map");
+//     let divMapContainer = document.querySelector(".d");
+//     divMapContainer.style.display = "block";
+//     map = new google.maps.Map(document.querySelector(".d"), {
+//                     center: {lat: parseFloat(latitude), lng: parseFloat(longitude)},
+//                     mapTypeId: 'satellite',
+//                     zoom: 18
+//             });
+// }
